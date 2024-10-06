@@ -1,0 +1,461 @@
+
+*{
+    margin: 0;padding: 0;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.688);
+    box-shadow: 0px 101px 0px 0px inset rgba(0, 0, 0, 0.173);
+    
+}
+.first{
+   
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/4d2c5849-b306-4884-9036-6211f7ee0178/web/IN-en-20240930-TRIFECTA-perspective_1e1ca6cd-9e2d-4e9d-9e4b-ba0c2d3a0e31_large.jpg");
+}
+
+.logo{
+    height: 70px;
+    width: 150px;
+    text-align: end;
+}
+.main .nav{
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 19px; */
+
+}
+
+.navbtn{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px ;
+    gap: 15px;
+    
+    
+    &.navbtn .sign{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        cursor: pointer;
+     }
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 120px;
+    position: relative;
+}
+
+.select-box{
+    padding: 6px 17px 6px 15px;
+    padding-left: 25px;
+    gap: 8px;
+    font-weight:400 ;
+    background: rgba(0, 0, 0, 0.315);
+    border: white .2px solid;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    z-index: 1;
+
+    &.select-box option{
+        font-size: 16px;
+        color: black;
+    }
+
+}
+.tran{
+    color: white;
+    position: absolute;
+    height: 100%; 
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    left: 11px;
+    
+}
+
+.sign{
+    padding: 6px 15px;
+    font-weight: 560;
+    background: #E50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.container{
+    height: 85vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .con{
+    width: 590px;
+    height: 50vh;
+    
+}
+
+.container .con .con1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 180px;
+    
+} 
+
+.container .con .con2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    
+
+}
+
+.container .con .con3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+}
+.sidetails{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    text-align: center;
+}
+
+.sidetails input{
+    padding: 20px;
+    padding-right: 165px;
+    font-size: 15px;
+    border-radius: 4px;
+    background: rgba(15, 47, 65, 0.392);
+    border: white .25px solid;
+    &::placeholder{
+        color: white;
+    }
+    
+}
+
+.sidetails button{
+    padding:15px 30px ;
+    border-radius: 4px;
+    background: #E50914;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.container2{
+    height: 120vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    
+}
+.c2in h2{
+    padding: 20px;
+    padding-left: 0px;
+    color: white;
+}
+
+.container2 .c2in{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+   
+}
+.c2in .top{
+    width: 80vw;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+.c2in .top .movie1,.movie2,.movie3,.movie4,.movie5{
+    height: 280px;
+    width: 200px;
+    /* background-color: rgb(17, 119, 208); */
+}
+.c2in .top .movie1 {
+    display: flex;
+    align-items: flex-end;
+    transition: transform .2s;
+
+}
+.c2in .top .movie1 .num{
+    z-index: 1;
+    width: 30px;
+}
+.c2in .top .movie1 .num .num1{
+    display: flex;
+    height: 120px;
+    width: 70px;
+    font-size: 100px;
+    font-weight: 850;
+    -webkit-text-stroke: 3px rgb(233, 226, 226);
+    align-items: center;
+    justify-content: center;
+}
+.c2in .top .movie2 {
+    display: flex;
+    align-items: flex-end;
+    transition: transform .2s;
+}
+.c2in .top .movie1:hover,.movie2:hover,.movie3:hover,.movie4:hover,.movie5:hover{
+    transform: scale(1.05);
+}
+.c2in .top .movie2 .num{
+    z-index: 1;
+    width: 30px;
+    
+}
+.c2in .top .movie2 .num .num2{
+    display: flex;
+    height: 120px;
+    width: 70px;
+    font-size: 100px;
+    font-weight: 850;
+    -webkit-text-stroke: 3px rgb(233, 226, 226);
+    align-items: center;
+    justify-content: center;
+    
+}
+.c2in .top .movie3 {
+    display: flex;
+    align-items: flex-end;
+    transition: transform .2s;
+
+}
+.c2in .top .movie3 .num{
+    z-index: 1;
+    width: 30px;
+}
+.c2in .top .movie3 .num .num3{
+    display: flex;
+    height: 120px;
+    width: 70px;
+    font-size: 100px;
+    font-weight: 850;
+    -webkit-text-stroke: 3px rgb(233, 226, 226);
+    align-items: center;
+    justify-content: center;
+}
+.c2in .top .movie4 {
+    display: flex;
+    align-items: flex-end;
+    transition: transform .2s;
+
+}
+.c2in .top .movie4 .num{
+    z-index: 1;
+    width: 30px;
+}
+.c2in .top .movie4 .num .num4{
+    display: flex;
+    height: 120px;
+    width: 70px;
+    font-size: 100px;
+    font-weight: 850;
+    -webkit-text-stroke: 3px rgb(233, 226, 226);
+    align-items: center;
+    justify-content: center;
+}
+.c2in .top .movie5{
+    display: flex;
+    align-items: flex-end;
+    transition: transform .2s;
+
+}
+.c2in .top .movie5 .num{
+    z-index: 1;
+    width: 30px;
+}
+.c2in .top .movie5 .num .num5{
+    display: flex;
+    height: 120px;
+    width: 70px;
+    font-size: 100px;
+    font-weight: 850;
+    -webkit-text-stroke: 3px rgb(233, 226, 226);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.c2in .top img{  
+    border-radius: 10px;
+}
+.heap{
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+}
+
+.c2in .perks{
+    width: 80vw;
+    height: 300px;
+    background-color: rgb(1, 9, 7);
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.c2in .perks .perks1,.perks2,.perks3,.perks4{
+    height: 280px;
+    width: 280px;
+    background-image: linear-gradient( to bottom right,#192144,#1d172d,#13070d);
+    border-radius: 9px;
+    color: white;
+}
+
+.choose #country{
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.choose #content{
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.perks .perkhead{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 15px 10px;
+}
+
+.perks .perkcon{
+    font-weight: 400;
+    padding: 10px;
+}
+
+.perkicon{
+    height: 72px;
+    width: 72px;
+    
+}
+
+.third{
+    background-color: black;
+}
+.container3{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    color: white;
+}
+
+.headfaq{
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+.faqbtn{
+    width: 80vw;
+    margin: auto;
+    padding: 3px;
+   
+}
+.faqbtn button:hover{
+    background-color: rgb(75, 73, 73);
+}
+
+.container3 button {
+    padding: 30px;
+    /* padding-right: 120vh; */
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: start;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    color: white;
+}
+
+.fourth{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.head4{
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+
+.sidetails4{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sidetails4 input{
+    padding: 20px;
+    padding-right: 350px;
+    font-size: 15px;
+    border-radius: 4px;
+    background: rgba(15, 47, 65, 0.392);
+    border: white .25px solid;
+    &::placeholder{
+        color: white;
+    }
+
+}
+
+.sidetails4 button{
+    padding:15px 30px ;
+    border-radius: 4px;
+    background: #E50914;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
+
+
+
+
+
+
+
